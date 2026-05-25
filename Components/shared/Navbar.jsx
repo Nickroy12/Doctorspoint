@@ -13,7 +13,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="fixed top-0 left-0 w-full z-50 pt-4">
+      <nav className=" w-full z-50 pt-4">
         <div className="max-w-7xl mx-auto px-6">
 
           <div className="h-16 px-6 rounded-2xl border border-white/20 bg-white/10 backdrop-blur-lg shadow-lg flex items-center justify-between">
@@ -56,14 +56,14 @@ export default function Navbar() {
 
                 <li>
                   <Link
-                    href="/services"
+                    href="/Consultant"
                     className={`transition duration-300 ${
-                      isActive("/services")
+                      isActive("/Consultant")
                         ? "text-cyan-400 font-semibold"
                         : "hover:text-cyan-400"
                     }`}
                   >
-                    Services
+                    Consultant
                   </Link>
                 </li>
 
@@ -120,8 +120,8 @@ export default function Navbar() {
           About
         </Link>
 
-        <Link href="/services" onClick={() => setOpen(false)}>
-          Services
+        <Link href="/Consultant" onClick={() => setOpen(false)}>
+         Consultant
         </Link>
 
         <Link href="/contact" onClick={() => setOpen(false)}>
